@@ -1,6 +1,21 @@
 # rpi-fancontrol
 Script to control the fan of the Raspberry Pi2 / 3 using PWM and the internal temperature sensor
 
+# The electronic connection
+
+Components:
+
+- 1 NPN transistor (2n2222A) or compatible
+- 1 Capacitor of 100nF or more (try with another values, low values the fan make noise)
+
+## Circuit in protoboard
+![Protoboard](https://github.com/goyometeojorito/rpi-fancontrol/raw/master/protoboard.png)
+
+## Circuit in real
+I use a female connector to put the cables to the RPi, (you can omit and connect directly)
+
+![Circuit](https://github.com/goyometeojorito/rpi-fancontrol/raw/master/circuit.png)
+
 # Instalation guide
 
 ## Pre-requisites
