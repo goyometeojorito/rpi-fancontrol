@@ -35,6 +35,8 @@ sudo chmod 775 runfancontrol.sh
 sudo chown root runfancontrol.sh
 ```
 
+edit the _runfancontrol.sh_ and fix the path to the _fancontrol.py_ with the path where you copied it
+
 now open the crontab editor (for the sudo account)
 
 ```
@@ -47,4 +49,7 @@ and write in bottom (don't forget the @):
 @reboot sh /home/osmc/runfancontrol.sh
 ```
 
-and all it's done
+and all it's done.
+
+If you can call the python script directly from the crontab without hanging the system, tell my how.
+Currently the "sh" script launch the python in a separate process (with the "&" symbol).
