@@ -6,7 +6,7 @@ import os
 tempSteps =  [0, 20, 30, 40, 45, 50, 55, 60, 65, 70,  75,  80,  90]
 speedSteps = [0,  0,  0,  0,  0,  6,  8, 10, 15, 50, 100, 100, 100]
 
-# speedSteps: 0 is Fan OFF, 100% is Fan at 100%, 45º 50º 55º is the normal temperature, put the speed in low speed for low noise 
+# speedSteps: 0 is Fan OFF, 100% is Fan at 100%, 45, 50, 55 degrees is the normal temperature, put the speed in low speed for low noise 
 
 # pin for PWM signal
 PIN_TO_PWM = 25
@@ -19,7 +19,7 @@ GPIO.setup(PIN_TO_PWM, GPIO.OUT)
 class FanControl():
 
     def getCPUtemp(self):
-        # get the current temperature in 1000 = 1º (must be divided by 1000 to get number in degrees)
+        # get the current temperature in 1000 = 1 degree (must be divided by 1000 to get number in degrees)
         cTemp = os.popen('cat /sys/class/thermal/thermal_zone0/temp').readline()
         return float(cTemp.replace("\n",""))/1000.0
 
