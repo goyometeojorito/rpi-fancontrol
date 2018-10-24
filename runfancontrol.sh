@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo python /home/osmc/fancontrol.py
+sudo python /home/osmc/fancontrol.py&
