@@ -68,7 +68,7 @@ now open the crontab editor (for the sudo account)
 sudo crontab -e
 ```
 
-and write in bottom (don't forget the @):
+and write in bottom (don't forget the @ and change with your path):
 
 ```
 @reboot sh /home/osmc/runfancontrol.sh
